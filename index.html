@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/12fb342742.js"></script>
+
+    <title>Tribute Page</title>
+  </head>
+  <body id="home" class="container">
+    <!-- 
+      ***************
+         NAVIGATION
+      ***************
+    -->
+    <nav class="navigation">
+      <!-- TOGGLE ICON -->
+      <input id="toggle" class="nav__toggle" type="checkbox" />
+      <label onclick="navToggle()" for="toggle" class="nav__toggle-btn">
+        <span class="nav__toggle-icon-before">&nbsp;</span>
+        <span class="nav__toggle-icon">&nbsp;</span>
+        <span class="nav__toggle-icon-after">&nbsp;</span>
+      </label>
+
+      <!-- DARK OVERLAY -->
+      <div class="dark-overlay">&nbsp;</div>
+
+      <!-- MOBILE NAV ITEM -->
+      <ul class="navigation__list-mobile">
+        <li class="navigation__link-mobile">
+          <a class="nav-mobile" href="#home">Home</a>
+        </li>
+        <li class="navigation__link-mobile">
+          <a class="nav-mobile" href="#about">About</a>
+        </li>
+        <li class="navigation__link-mobile">
+          <a class="nav-mobile" href="#members">Band Members</a>
+        </li>
+        <li class="navigation__link-mobile">
+          <a class="nav-mobile" href="#social">Social</a>
+        </li>
+        <div class="horizontal-line">&nbsp;</div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="navigation__list-mobile-social">
+          <a
+            href="https://twitter.com/scandal_band?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            target="__blank"
+          >
+            <i class="fab fa-twitter-square twitter"></i>
+          </a>
+
+          <a href="https://www.facebook.com/scandalofficial/" target="__blank">
+            <i class="fab fa-facebook-square facebook"></i>
+          </a>
+        </div>
+
+        <!-- LOGO -->
+        <img
+          src="/assets/logo.svg"
+          alt="Logo"
+          class="navigation__list-mobile-logo"
+        />
+      </ul>
+
+      <!-- DESKTOP NAV ITEM -->
+      <ul class="navigation__list">
+        <li class="navigation__link">
+          <a href="#home">Home</a>
+        </li>
+        <li class="navigation__link">
+          <a href="#about">About</a>
+        </li>
+        <li class="navigation__link">
+          <a href="#members">Band Members</a>
+        </li>
+        <li class="navigation__link">
+          <a href="#social">Social</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 
+      ***************
+          BANNER
+      ***************
+    -->
+    <header class="header">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="/assets/banner-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <img class="logo" src="assets/logo.svg" alt="Logo" />
+    </header>
+
+    <main id="main">
+      <!-- 
+      ***************
+          ABOUT
+      ***************
+      -->
+      <section id="tribute-info" class="tribute ">
+        <div id="about" class="tribute__description py-xl">
+          <h1 id="title" class="header-1 header-1-underline margin-bottom-sm">
+            This is Scandal!
+          </h1>
+          <p class="text">
+            Scandal is an all female Japanese rock band originating from Osaka,
+            Japan. They all met in a vocal and dance school, CALESS. Shortly
+            thereafter, they have formed their group in August of 2006. Starting
+            out at first playing live street perfomances, they were then noticed
+            by indie label, Kitty Records, which ultimately signed them on.
+            Until recently, Scandal has went on and fomred their own music
+            label, "her", on Christmas Eve 2018.
+            <br />
+            <br />
+            The band consists of 4 members, while all providing lead vocals at
+            some point, their lead vocalist and rhythm guitarist is Haruna
+            Ono,Mami Sasazaki on lead guitar, Tomomi Ogawa on bass, and Rina
+            Suzuki on drums.
+          </p>
+        </div>
+        <figure id="img-div">
+          <img id="image" src="/assets/band-image.jpg" alt="Band Image" />
+          <figcaption id="img-caption">
+            The band posing in front of a random house.
+          </figcaption>
+        </figure>
+      </section>
+      <!-- 
+      ***************
+          TIMELINE
+      ***************
+      -->
+      <section class="timeline py-xl">
+        <div class="timeline__title">
+          <p>Timeline</p>
+        </div>
+        <div class="timeline__content">
+          <!-- LEFT HAND SIDE -->
+          <div class="timeline__content-container timeline__content--left">
+            <div class="timeline__desc">
+              <h2 class="header-2 header-2-dark margin-bottom-sm">2006</h2>
+              <p class="text">
+                The inception of Scandal
+              </p>
+            </div>
+          </div>
+          <!-- RIGHT HAND SIDE -->
+          <div class="timeline__content-container timeline__content--right">
+            <div class="timeline__desc">
+              <h2 class="header-2 header-2-dark margin-bottom-sm">
+                03-03-2008
+              </h2>
+              <p class="text">
+                Signed with Indie label Kitty Records. And released 3 singles
+                exclusive. The first being "Space Ranger", ranking #2 on the
+                Tower indie charts. While the other two "Koi Moyo", and
+                "Kagero", ranking #1 on the spot
+              </p>
+            </div>
+          </div>
+          <!-- LEFT HAND SIDE -->
+          <div class="timeline__content-container timeline__content--left">
+            <div class="timeline__desc">
+              <h2 class="header-2 header-2-dark margin-bottom-sm">
+                10-22-2008
+              </h2>
+              <p class="text">
+                Made their major debut on Epic Records Japan with the single
+                "Doll".
+                <br />
+                <br />
+                Gaining more exposure, which includes appearances on mainstream
+                music television shows such as Music Station
+              </p>
+            </div>
+          </div>
+          <!-- RIGHT HAND SIDE -->
+          <div class="timeline__content-container timeline__content--right">
+            <div class="timeline__desc">
+              <h2 class="header-2 header-2-dark margin-bottom-sm">
+                06-16-2009
+              </h2>
+              <p class="text">
+                Released single "Shoujo S", which was used as the tenth opening
+                theme for anime Bleach
+              </p>
+            </div>
+          </div>
+          <!-- LEFT HAND SIDE -->
+          <div class="timeline__content-container timeline__content--left">
+            <div class="timeline__desc">
+              <h2 class="header-2 header-2-dark margin-bottom-sm">
+                11-17-2010
+              </h2>
+              <p class="text">
+                First mini-album released, "R-GIRLS's ROCK!"
+              </p>
+            </div>
+          </div>
+          <!-- RIGHT HAND SIDE -->
+          <div class="timeline__content-container timeline__content--right">
+            <div class="timeline__desc">
+              <h2 class="header-2 header-2-dark margin-bottom-sm">
+                08-10-2011
+              </h2>
+              <p class="text">
+                First full album released "Baby Action"
+              </p>
+            </div>
+          </div>
+          <!-- LEFT HAND SIDE -->
+          <div class="timeline__content-container timeline__content--left">
+            <div class="timeline__desc">
+              <h2 class="header-2 header-2-dark margin-bottom-sm">
+                03-07-2012
+              </h2>
+              <p class="text">
+                Scandal's second album released, "Scandal Show"
+              </p>
+            </div>
+          </div>
+          <!-- RIGHT HAND SIDE -->
+          <div class="timeline__content-container timeline__content--right">
+            <div class="timeline__desc">
+              <h2 class="header-2 header-2-dark margin-bottom-sm">
+                09-26-2012
+              </h2>
+              <p class="text">
+                Third album released, "Queens are trumps &ndash; Kirifuda wa
+                Queen &ndash;"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      ***************
+          MEMBERS
+      ***************
+      -->
+      <section id="members" class="members">
+        <h2
+          class="members__header header-2 header-2-underline
+        margin-bottom-lg"
+        >
+          The Girls
+        </h2>
+        <div onclick="cardToggle()" class="members__container">
+          <!-- CARD 1 -->
+          <div class="members__card members__img-1">
+            <div class="members__name">
+              <h2 class="header-2 header-2-light">
+                Haruna Ono
+              </h2>
+            </div>
+            <div class="members__detail">
+              <span class="members__detail--role">
+                Lead vocalist / Rhthym guitar</span
+              >
+              <br />
+              <br />
+              Haruna is the eldest among the group and also serves as the
+              leader. Haruna has the most powerful and deep voice of the group
+              that usually leads in their songs combined with the voices of the
+              other 3 members.
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div onclick="cardToggle()" class="members__card members__img-2">
+            <div class="members__name">
+              <h2 class="header-2 header-2-light">Mami Sasazaki</h2>
+            </div>
+            <div class="members__detail">
+              <span class="members__detail--role"> Lead Guitarist</span>
+              <br />
+              <br />
+              Sasazaki Mami has the best guitar skills among the girls, and
+              serves as the lead guitarist in Scandal. She often amazes fans
+              that come to see them live with her dexterity and skill with the
+              electric guitar.
+              <br />
+              <br />
+              Also among the group, she’s also the biggest fan of Japanese
+              Anime.
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div onclick="cardToggle()" class="members__card members__img-3">
+            <div class="members__name">
+              <h2 class="header-2 header-2-light">Rina Suzuki</h2>
+            </div>
+            <div class="members__detail">
+              <span class="members__detail--role"> Drummer</span>
+              <br />
+              <br />
+              Rina is the youngest among the group and serves as the drummer,
+              she always has a smile painted on her face when performing.
+              <br />
+              <br />
+              Rina can also play the piano and has been playing since she was 3
+              years old. Rina was the last member to join the group.
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div onclick="cardToggle()" class="members__card members__img-4">
+            <div class="members__name">
+              <h2 class="header-2 header-2-light">Tomomi Ogawa</h2>
+            </div>
+            <div class="members__detail">
+              <span class="members__detail--role">Bassist</span>
+              <br />
+              <br />
+              Tomomi is the bass and writer of majority of SCANDAL's songs.
+              Tomomi has a very sweet and kinda “chipmunky” voice that is easy
+              to like, together with Haruna, their voices become a very perfect
+              combination. Tomomi typically leads in solo parts of SCANDAL's
+              songs.
+            </div>
+          </div>
+        </div>
+        <img class="members__logo" src="/assets/logo.svg" alt="Logo" />
+      </section>
+      <!-- 
+      ***************
+         MORE INFO
+      ***************
+      -->
+      <section id="social" class="more-info">
+        <div class="more-info__single">
+          <h2 class="header-2 margin-bottom-md header-2-underline">
+            Latest Single
+          </h2>
+          <iframe
+            class="more-info__single-video"
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/t-qVp94jB1o"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="more-info__content">
+          <h2 class="header-2 margin-bottom-sm">
+            Follow Scandal on #Twitter!
+          </h2>
+          <a
+            href="https://twitter.com/scandal_band?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            target="_blank"
+            id="tribute-link"
+          >
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="text">&copy; 2019 Tony Soukkeo | Scandal Tribute Page</p>
+    </footer>
+    <script src="/js/cardToggle.js"></script>
+    <script src="/js/navToggle.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+.margin-top-sm {
+  margin-top: 2rem;
+}
+
+.margin-top-md {
+  margin-top: 4rem;
+}
+
+.margin-top-lg {
+  margin-top: 6rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 2rem;
+
+  @include respond(medium) {
+    margin-bottom: 1rem;
+  }
+}
+
+.margin-bottom-md {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 6rem;
+}
+
+// PADDING
+.py-sm {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-md {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-lg {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-xl {
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+
+  @include respond(medium) {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+}
+
+// PREVENT SCROLL
+.no-scroll {
+  overflow: hidden;
+}
+
+// TRANSITION PROPERTIES
+.overlay-transition {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.nav-transition {
+  width: 20rem !important;
+  height: 100% !important;
+  opacity: 1 !important;
+}
+
+.link-transition {
+  display: block !important;
+  font-size: 1.4rem !important;
+}
+
+.icon-transition {
+  font-size: 5rem !important;
+}
+
+// HAMBURGER ICON TRANSITION
+
+.navigation-transition {
+  background-color: transparent !important;
+}
+
+.nav-before-transition {
+  top: 1rem !important;
+  transform: rotate(135deg) !important;
+}
+
+.nav-after-transition {
+  top: 1rem !important;
+
+  transform: rotate(-135deg) !important;
+}
+
+// CARD ONCLICK TRANSITION
+.card-name-transition {
+  margin-top: 0 !important;
+  width: 100% !important;
+}
+
+.card-detail-transition {
+  margin-top: 2rem !important;
+}
+
+.card-img-1 {
+  background-image: linear-gradient(
+      rgba($color-black, 0.9),
+      rgba($color-black, 0.9)
+    ),
+    url("/assets/haruna.jpg") !important;
+}
+
+.card-img-2 {
+  background-image: linear-gradient(
+      rgba($color-black, 0.9),
+      rgba($color-black, 0.9)
+    ),
+    url("/assets/mami.jpg") !important;
+}
+
+.card-img-3 {
+  background-image: linear-gradient(
+      rgba($color-black, 0.9),
+      rgba($color-black, 0.9)
+    ),
+    url("/assets/rina.jpg") !important;
+}
+
+.card-img-4 {
+  background-image: linear-gradient(
+      rgba($color-black, 0.9),
+      rgba($color-black, 0.9)
+    ),
+    url("/assets/tomo.jpg") !important;
+}
