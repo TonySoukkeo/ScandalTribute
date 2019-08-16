@@ -1,0 +1,44 @@
+// MEDIA QUERIES
+@mixin respond($bp) {
+  @if $bp == largest {
+    // 1600 px
+    @media only screen and (max-width: 100em) {
+      @content;
+    }
+  }
+
+  @if $bp == large {
+    // 1400 px
+    @media only screen and (max-width: 87.5em) {
+      @content;
+    }
+  }
+
+  @if $bp == medium {
+    // 1200 px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $bp == small {
+    // 900 px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $bp == smaller {
+    // 600 px
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $bp == smallest {
+    // 420 px
+    @media only screen and (max-width: 26.25em) {
+      @content;
+    }
+  }
+}

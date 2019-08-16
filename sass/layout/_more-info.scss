@@ -1,0 +1,69 @@
+.more-info {
+  padding: 40rem 6rem 10rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44vw, 1fr));
+  grid-gap: 3rem;
+  position: relative;
+  clip-path: polygon(50% 22%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary, 0.5),
+    rgba($color-primary-dark, 0.9)
+  );
+
+  @include respond(medium) {
+    grid-row-gap: 8rem;
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  @include respond(small) {
+    padding: 38rem 3rem 10rem 3rem;
+  }
+
+  @include respond(smallest) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__single {
+    @include respond(small) {
+      grid-column: 1 / -1;
+    }
+
+    &-video {
+      box-shadow: 0 2rem 5rem rgba($color-black, 0.24);
+
+      @include respond(smaller) {
+        height: 30rem;
+      }
+
+      @include respond(smallest) {
+        height: 30rem;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(small) {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+#tribute-link {
+  i {
+    font-size: 15rem;
+    color: #1da1f2;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
