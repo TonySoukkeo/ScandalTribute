@@ -5,11 +5,12 @@
   "main": "index.js",
   "homepage": "https://TonySoukkeo.github.io/ScandalTribute",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.comp.css -o public/css/style.prefix.css",
+    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "deploy": "gh-pages -d build"
   },
   "author": "Tony Soukkeo",
   "license": "ISC",

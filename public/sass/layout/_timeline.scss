@@ -1,0 +1,144 @@
+.timeline {
+  position: relative;
+  background-image: linear-gradient(
+      rgba($color-darkgrey, 0.8),
+      rgba($color-darkgrey, 0.8)
+    ),
+    url("/assets/timeline-bg.jpeg");
+  background-size: cover;
+
+  &__title {
+    position: absolute;
+    top: -0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-primary;
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
+    background-color: $color-light;
+    padding: 0.2rem 3rem;
+    clip-path: polygon(50% 0%, 100% 0, 50% 100%, 50% 100%, 0 0);
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    @include respond(smaller) {
+      margin: 0;
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0.2rem;
+      background-color: #fff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include respond(smaller) {
+        left: 3.1rem;
+      }
+    }
+
+    &-container {
+      padding: 1rem 4rem;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+
+      @include respond(smaller) {
+        width: 100%;
+        padding-left: 7rem;
+        padding-right: 2.5rem;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        right: -1.9rem;
+        background-color: #fff;
+        border: 2rem solid $color-secondary;
+        top: 1.5rem;
+        border-radius: 50%;
+        z-index: 1;
+      }
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      left: 50%;
+
+      @include respond(smaller) {
+        left: 0%;
+      }
+    }
+
+    &--left::before,
+    &--right::before {
+      content: "";
+      height: 0;
+      position: absolute;
+      width: 0;
+      z-index: 1;
+      border: medium solid white;
+    }
+
+    &--left::before {
+      top: 2.2rem;
+      right: 3rem;
+      border-width: 1rem 0 1rem 1rem;
+      border-color: transparent transparent transparent rgba($color-light, 0.8);
+
+      @include respond(smaller) {
+        left: 6rem;
+        transform: rotate(180deg);
+      }
+    }
+
+    &--right::before {
+      top: 2.2rem;
+      left: 3rem;
+      border-width: 1rem 1rem 1rem 0;
+      border-color: transparent rgba($color-light, 0.8) transparent transparent;
+
+      @include respond(smaller) {
+        left: 6rem;
+      }
+    }
+
+    &--right::after {
+      left: -2rem;
+    }
+
+    &--left::after,
+    &--right::after {
+      @include respond(smaller) {
+        left: 1.5rem;
+      }
+    }
+  }
+
+  &__desc {
+    padding: 2rem 3rem;
+    background-color: rgba($color-light, 0.8);
+    border-radius: 0.6rem;
+
+    @include respond(medium) {
+      padding: 1.4rem;
+    }
+  }
+}

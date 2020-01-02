@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  display: grid;
+  grid-template-rows: 6rem 70vh;
+  grid-template-columns:
+    [full-start] 6rem [middle-start] repeat(
+      10,
+      [col-start] minmax(min-content, 1fr) [col-end]
+    )
+    [middle-end] 6rem [full-end];
+
+  @include respond(small) {
+    grid-template-rows: 6rem 50vh;
+  }
+}
